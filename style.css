@@ -15,24 +15,22 @@
 }
 body {
     background-image: url('Eu\ na\ Quadra\ \(Editado\ por\ galaxy\ AI\).jpg');
-    background-size: cover; /* Faz a imagem ocupar toda a tela */
-    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-size: cover;
+    background-repeat: no-repeat;
 
 }
   button {
-    background-color: #00345f; /* verde */
-    color: rgb(255, 242, 0); /* cor da letra */
-    padding: 10px 20px; /* espaço interno */
-    border: none; /* sem borda */
-    border-radius: 5px; /* cantos arredondados */
-    cursor: pointer; /* muda o cursor ao passar o mouse */
+    background-color: #00345f;
+    color: rgb(255, 242, 0);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
     font-family: Montserrat;
     font-weight: bolder;
   }
 
   button:hover {
-    background-color: #a600ff; /* muda cor quando passa o mouse */
+    background-color: #a600ff;
     color: bisque;
   }
-</style>
-
