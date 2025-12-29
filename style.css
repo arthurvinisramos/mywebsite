@@ -11,6 +11,17 @@
     color: wheat;
     text-align: center;
     font-size: 15px;
+
+#installBtn {
+  background-color: #00345f;
+    color: rgb(255, 242, 0);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+}
     
 }
 body {

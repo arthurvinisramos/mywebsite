@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="Favicon.png">
+    <link rel="manifest" href="manifest.json">
     <title>Arthur Vinicius Website</title>
     <meta name="description" content="Arthur Vinicius Website Oficial com projetos, estudos e informações.">
 </head>
@@ -17,7 +18,28 @@
         <h2>O QUE DESEJA VER/FAZER?</h2> 
         <p><a href="mailto:arthurviniciussramos@gmail.com"><button> E-MAIL PARA arthurviniciussramos@gmail.com</button></a></p>
         <p><a href="QUIZ.pptx" download><button>FAZER DOWNLOAD DO QUIZ (USO RECOMENDADO DE COMPUTADOR)</button></a></p>
-        </button>
+        <p><button id="installBtn" style="display:none;margin:20px auto;display:block:">INSTALAR</button></p>
+        <p>FAÇA JÁ O DOWNLOAD DO ARTHUR VINÍCIUS WEBSITE EM SEU PC COM WINDOWS OU MACOS!</p>
         </div>
+        <script>
+        if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js');
+        }
+        </script>
+        <script>
+        let deferredPrompt;
+
+        window.addEventListener('beforeinstallprompt', (e) => {
+        e.preventDefault();
+        deferredPrompt = e;
+        document.getElementById('installBtn').style.display = 'flex';
+        });
+
+        document.getElementById('installBtn').addEventListener('click', async () => {
+        if (!deferredPrompt) return;
+        deferredPrompt.prompt();
+        deferredPrompt = null;
+        });
+        </script>
 </body>
 </html>
