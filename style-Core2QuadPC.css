@@ -1,0 +1,37 @@
+#inicio {
+    font-family: montserrat;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+    color: antiquewhite;
+}
+
+#opcoes {
+    font-family: 'Times New Roman', Times, serif;
+    color: wheat;
+    text-align: center;
+    font-size: 15px;
+    
+}
+body {
+    background-image: url('Eu\ na\ Quadra\ \(Editado\ por\ galaxy\ AI\).jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+  button {
+    background-color: #00345f;
+    color: rgb(255, 242, 0);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+  }
+
+  button:hover {
+    background-color: #a600ff;
+    color: bisque;
+  }
+  
